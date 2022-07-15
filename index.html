@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 255, 255, 0.526);
+      }
+      .audio {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .videoo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="audio">
+        <audio controls loop>
+          <source src="./multimedia/Audio/30-second-audio-intro.mp3" />
+          <source src="./multimedia/Audio/small-tunes.mp3" />
+        </audio>
+      </div>
+      <div class="videoo">
+        <video height="350" width="500" controls loop>
+          <source src="./multimedia/Video/fire.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </body>
+</html>
